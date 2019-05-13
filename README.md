@@ -1,7 +1,7 @@
 # vue-zane-swiper
 
-> vue分页插件
-
+> vue分页插件 https://github.com/qinglong-kooboo/vue-zane-pagination
+ 
 ## Build Setup
 
 ``` bash
