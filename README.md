@@ -1,6 +1,6 @@
 # vue-zane-swiper
 
-> vue分页插件 https://github.com/qinglong-kooboo/vue-zane-pagination
+> vue分页插件
  
 ## Build Setup
 
