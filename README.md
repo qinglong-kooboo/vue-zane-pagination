@@ -1,4 +1,4 @@
-# vue-zane-swiper
+# vue-zane-pagination
 
 > vue分页插件
  
