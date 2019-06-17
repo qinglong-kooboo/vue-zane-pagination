@@ -17,7 +17,7 @@ npm run lib
 
 ## 参数配置
 **pageSize**：type: Number 必选<br>
-**middleSize**：type: Number 可选（默认4）<br>
+**windowSize**：type: Number 可选（默认4）<br>
 
 ## demo
 ![](https://github.com/qinglong-kooboo/vue-zane-pagination/blob/master/public/img/pagination.gif)
