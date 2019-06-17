@@ -65,7 +65,7 @@
         type: Number,
         required: true
       },
-      middleSize: {
+      windowSize: {
         type: Number,
         default: 4
       }
@@ -88,12 +88,12 @@
           let middle = this.pageSize - 2
           let middleArr = []
 
-          if (middle <= this.middleSize) {
+          if (middle <= this.windowSize) {
             for (let i = 0; i < middle; i++) {
               middleArr.push(this.moreIndex + i)
             }
           } else {
-            for (let i = 0; i < this.middleSize; i++) {
+            for (let i = 0; i < this.windowSize; i++) {
               middleArr.push(this.moreIndex + i)
             }
           }
@@ -108,7 +108,7 @@
         }
       },
       isLess () {
-        if (this.pageSize > (this.moreIndex + this.middleSize)) {
+        if (this.pageSize > (this.moreIndex + this.windowSize)) {
           return true
         } else {
           return false
@@ -121,7 +121,7 @@
         if (this.currentIndex === this.pageSize) {
           return
         }
-        if (this.currentIndex > this.moreIndex + this.middleSize - 1) {
+        if (this.currentIndex > this.moreIndex + this.windowSize - 1) {
           this.moreIndex += 1
         }
       },
@@ -140,7 +140,7 @@
       },
       turnToLast () {
         this.currentIndex = this.pageSize
-        this.moreIndex = this.pageSize - this.middleSize
+        this.moreIndex = this.pageSize - this.windowSize
       }
     }
   }
